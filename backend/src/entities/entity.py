@@ -3,10 +3,13 @@ from sqlalchemy import create_engine, Column, String, Integer, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
+DB_NAME='DSUI'
+DB_USERNAME='postgres'
+DB_PASSWORD='supanep34'
 db_url = 'localhost:5432'
-db_name = 'NPG'
-db_user = 'postgres'
-db_password = '0NLIN3-ex4m'
+db_name = DB_NAME
+db_user = DB_USERNAME
+db_password = DB_PASSWORD
 engine = create_engine(f'postgresql://{db_user}:{db_password}@{db_url}/{db_name}')
 Session = sessionmaker(bind=engine)
 
