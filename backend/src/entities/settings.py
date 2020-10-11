@@ -1,3 +1,0 @@
-DB_NAME='DSUI'
-DB_USERNAME='postgres'
-DB_PASSWORD='supanep34'
